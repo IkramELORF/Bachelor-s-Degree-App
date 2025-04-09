@@ -1,0 +1,19 @@
+spring:
+  main:
+    allow-circular-references: true
+  # Start - Database connection properties
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/sadagriculture
+    username: postgres
+    password: postgres
+  # End database connection properties
+
+  # Start JPA / Hibernate properties
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+# End JPA / Hibernate properties
+
